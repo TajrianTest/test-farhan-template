@@ -10,7 +10,6 @@
     "opti-push": "pnpm exec optimizely-cms-cli config push optimizely.config.mjs"
   },
   "dependencies": {
-    "@dam-portal/shared-types": "workspace:*",
     "@optimizely/cms-sdk": "^0.1.0-alpha.10",
     "next": "15.2.8",
     "react": "^19.0.0",

@@ -1,4 +1,34 @@
-import type { BrandConfig } from '@dam-portal/shared-types';
+/**
+ * Brand configuration interface for portal customization
+ */
+export interface BrandConfig {
+  branding: {
+    name: string;
+    logo: string;
+    favicon?: string;
+    colors: {
+      primary: string;
+      secondary: string;
+      accent: string;
+      background?: string;
+      text?: string;
+    };
+    typography: {
+      headingFont: string;
+      bodyFont: string;
+    };
+  };
+  layout: {
+    headerStyle: 'classic' | 'modern' | 'minimal';
+    footerStyle: 'simple' | 'detailed';
+    navigationPosition?: 'top' | 'side';
+  };
+  features?: {
+    enableBlog?: boolean;
+    enableSearch?: boolean;
+    enableDownloads?: boolean;
+  };
+}
 
 /**
  * Brand Portal Configuration
